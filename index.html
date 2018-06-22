@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Psychic Game</title>
+</head>
+
+<body>
+
+  <h1>The Psychic Game!</h1>
+
+  <p id="score"></p>
+  <p id="letters"></p>
+
+  <script>
+
+    // VARIABLES
+    // ==========================================================================
+
+    // The array of questions for our quiz game.
+    var words = [
+      { q: "Milk", l:"" },
+      { q: "Eggs",l:"" },
+      { q: "Hot Sauce",l:"" },
+      { q: "Lemon",l:"" },
+      { q: "Fish",l:"" }
+    ];
+
+
+
+var wordIndexLoc = Math.floor((Math.random() * 5) + 1);
+document.write(wordIndexLoc);
+
+    // We start the game with a score of 0.
+    var score = 0;
+    // Variable to hold the index of current question.
+    var letterIndex = 0;
+
+    // FUNCTIONS
+    // ==============================================================================
+
+    // Function to render words.
+    function renderLetters() {
+      // If there are still more questions, render the next one.
+      if (letterIndex <= (letters.length - 1)) {
+        document.querySelector("#question").innerHTML = questions[questionIndex].q;
+      }
+      // If there aren't, render the end game screen.
+      else {
+        document.querySelector("#question").innerHTML = "Game Over!";
+        document.querySelector("#score").innerHTML = "Final Score: " + score + " out of " + questions.length;
+      }
+    }
+
+    // Function that updates the score...
+    function updateScore() {
+      document.querySelector("#score").innerHTML = "Score: " + score;
+    }
+
+
+    // MAIN PROCESS
+    // ==============================================================================
+
+    // Calling functions to start the game.
+    renderQuestion();
+    updateScore();
+
+    // When the user presses a key, it will run the following function...
+    document.onkeyup = function(event) {
+
+      // If there are no more questions, stop the function.
+      if (questionIndex === questions.length) {
+        return;
+      }
+
+      // Determine which key was pressed, make it lowercase, and set it to the userInput variable.
+      var userInput = event.key.toLowerCase();
+
+      // Only run this code if "t" or "f" were pressed.
+      if (userInput === "t" || userInput === "f") {
+
+        // If they guess the correct answer, increase and update score, alert them they got it right.
+        if (userInput === questions[questionIndex].a) {
+          alert("Correct!");
+          score++;
+          updateScore();
+        }
+        // If wrong, alert them they are wrong.
+        else {
+          alert("Wrong!");
+        }
+
+        // Increment the questionIndex variable and call the renderQuestion function.
+        questionIndex++;
+        renderQuestion();
+
+      }
+
+    };
+    wordIndexLoc
+  </script>
+
+</body>
+
+</html>
