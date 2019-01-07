@@ -1,0 +1,33 @@
+{
+  "name": "tastyburger",
+  "version": "1.0.0",
+  "description": "Burger consumption. Solving for crud using Node.js, Express, Handlebars, and MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aseatts/tastyburger.git"
+  },
+  "keywords": [
+    "burgers",
+    "eating",
+    "burgerfi"
+  ],
+  "author": "Adam Seatts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aseatts/tastyburger/issues"
+  },
+  "homepage": "https://github.com/aseatts/tastyburger/#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "materialize-css": "^1.0.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.18.7"
+  }
+}

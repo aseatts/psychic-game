@@ -1,0 +1,17 @@
+{
+  "name": "bamazon-master",
+  "version": "1.0.0",
+  "description": "An Amazon-like storefront that takes in orders from customers and deplete stock from the store's inventory using SQL.",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "inquirer": "^6.2.1",
+    "mysql": "^2.15.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

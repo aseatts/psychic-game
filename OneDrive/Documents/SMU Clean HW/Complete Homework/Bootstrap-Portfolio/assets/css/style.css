@@ -1,0 +1,254 @@
+/* Content section is always at least the hight of the screen with a negative margin the height of the footer plus it's border. */
+
+/* #content {
+    min-height: auto;
+    margin: 0 auto -88px;
+
+    background-color: #00000062;
+    background-size: round;
+    background-position: center top;
+} */
+
+body {
+  background-image: url("../images/background/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Returning the i tag to default after the reset.css file changed it. */
+
+i {
+  font-style: italic;
+}
+
+/* Some basic definitions for headers on this site. */
+
+h1,
+h2 {
+  font-family: "Georgia", Times, Times New Roman, serif;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+  border-bottom: 3px solid #fae100;
+}
+
+h1 {
+  font-size: 2em;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.3em;
+  padding-bottom: 25px;
+}
+
+/* The top bar header with navigation. */
+
+header {
+  width: 100%;
+  /* height: 80px; */
+  background-color: white;
+  border-bottom: 4px solid #00ff88;
+  font-family: "Georgia", Times, Times New Roman, serif;
+  margin-bottom: 40px;
+}
+
+/* header section { */
+
+/* width: 960px; */
+
+/* margin: 0 auto; */
+
+/* } */
+
+#myName {
+  height: 77px;
+  /* padding: 0px 30px 0px 30px; */
+  /* float: left; */
+  line-height: 77px;
+  background-color: hsl(0, 0%, 28%);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+nav {
+  height: 76px;
+  float: right;
+  background-color: white;
+}
+
+.navButton {
+  display: inline-block;
+  height: 100%;
+  line-height: 80px;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.navButton a {
+  /* padding: 0px 30px 0px 30px; */
+  color: #999999;
+  text-decoration: none;
+}
+
+/* The small vertical line separating the nav buttons. */
+
+/* #portButton a { */
+
+/* border-left: 2px solid #efefef; */
+
+/* border-right: 2px solid #efefef; */
+
+/* } */
+
+/* Sets the width and centers all the content below the header. */
+
+#bodyContent {
+  /* width: 960px;
+    margin: 0 auto; */
+}
+
+/* Allows the body content section to grow with the main content section. */
+
+#bodyContent::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Content displayed in the main box to the left of the screen. */
+
+#mainContent {
+  padding: 40px 30px 40px 30px;
+  margin-bottom: 50px;
+  background-color: white;
+  box-shadow: 2px 2px 8px 1px #333333;
+  float: left;
+  font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+  color: #777777;
+  font-size: 1.2em;
+  line-height: 2em;
+  justify-content: center;
+}
+
+/* The following styles are specific to the about me page */
+
+#mainContent p {
+  margin: 16px 0px 16px 0px;
+  text-indent: 30px;
+  justify-items: center;
+}
+
+#profilePic {
+  width: 240px;
+  height: 240px;
+  float: left;
+  margin: 10px 30px 30px 0px;
+  box-shadow: 4px 4px 15px 2px #333333;
+}
+
+/* The following styles are specific to the portfolio page */
+
+.thumbnail {
+  position: relative;
+  margin: 2%;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding: 2%;
+}
+
+/* Make thumbnail larger when hovered. */
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* Maintains aspect ratio of image but does not allow image to be any wider than set amount of pixels. */
+
+.thumbnail img {
+  /* max-width: 270px; */
+  max-width: 100%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* The label on the image. */
+
+.label {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  height: 60px;
+  line-height: 60px;
+  width: calc(100% - 30px);
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  background-color: hsla(0, 0%, 28%, 0.8);
+}
+
+/* The following styles are specific to the contact us page */
+
+form {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  width: calc(100% - 20px);
+  font-size: 1em;
+  padding: 5px 5px 5px 15px;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 5px 5px 5px 15px;
+  font-size: 0.8em;
+}
+
+#submitButton {
+  background-color: hsl(0, 0%, 28%);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  width: auto;
+  padding: 8px 16px 8px 16px;
+  cursor: pointer;
+}
+
+/* Height of the footer and height of the blank div that is added to the body to stop the footer from overlapping body content. */
+
+footer,
+.push {
+  height: 80px;
+}
+
+footer {
+  background-color: #6666667e;
+  border-top: 8px solid #9900ff62;
+  line-height: 80px;
+  color: #cccccc;
+  text-align: center;
+}
+
+#copyright {
+  margin: 0px;
+}
+
+.picSection {
+  justify-content: center;
+}

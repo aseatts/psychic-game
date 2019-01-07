@@ -1,0 +1,84 @@
+body {
+    font-family: "Creepster", cursive;
+    color: yellow;
+    -webkit-text-stroke: 1px black;
+    align-content: center;
+    background-color: #790404;
+}
+
+html {
+    color: #ff0202;
+    -webkit-text-stroke: 1px black;
+}
+
+.jumbotron {
+    background-color: #d5d9e0;
+    color: black;
+    font-family: "Creepster", cursive;
+    margin-bottom: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+}
+
+.board {
+    color: rgb(255, 115, 0);
+    -webkit-text-stroke: 1px black;
+    font-family: "Kreon", serif;
+    margin-bottom: 2%;
+    padding-top: 0.5%;
+    border-radius: 6px;
+    padding-bottom: 10%;
+    font-size: large;
+}
+
+.gameplay {
+    background-image: url("../images/DeadZed.jpg");
+    border-radius: 2px;
+    background-size: cover;
+    padding-bottom: 20%;
+    align-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    img {
+        width: 50% !important;
+    }
+    .left {
+        padding-top: 20px;
+    }
+}
+
+h2 {
+    font-family: "Kreon", serif;
+    color: rgrgb(105, 1, 1);
+}
+
+#currentWord,
+#guessesLeft,
+#lettersGuessed,
+#wins,
+#losses {
+    font-size: 24px;
+}
+
+.left {
+    background-color: #d5d9e0;
+    border-radius: 6px;
+}
+
+.right {
+    padding-right: 0;
+}
+
+.row {
+    border-radius: 6px;
+}
+
+.row.match-my-cols {
+    overflow: hidden;
+}
+
+.row.match-my-cols [class*="col-"] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}

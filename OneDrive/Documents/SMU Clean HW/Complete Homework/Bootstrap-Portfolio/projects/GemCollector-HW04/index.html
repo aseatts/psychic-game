@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Gem Collector Game</title>
+    <!-- Reset Default Multibrowser support -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- BootStrap Style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- My Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Signika+Negative|Tangerine" rel="stylesheet">    
+</head>
+
+<div class="container">
+        <div class="row">
+        <div class="col-sm-4"  style=" text-align: center; margin-bottom: 5%;  ">
+                <h1>GEM COLLECTOR</h1>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-5" style="background-color:#341c50; opacity: 0.8;">
+            <h3>RULES</h3>
+
+            <p>To win you need to match the number given at the start of the game.</p>
+
+            <p>Each crystal has a hidden value that will be added to your score by clicking on it. If your total score surpasses
+                the given number, then you lose the game.</p>
+
+            <p>A fair warning... Each time the game restarts, the hidden value of each crystal changes. So don't get too comfortable.</p>
+        </div>
+
+        <div class="col-sm-5 " id="score" style="background-color:#3859a3;">
+            <h4>SCORE BOARD</h4>
+            <p id="wins">WINS: 0</p>
+            <p id="losses">LOSSES: 0</p>
+        </div>
+    </div>
+
+    <div class="row">
+            <div class="col-sm-12" id="gems">
+                    <img class="gem" id="greenGem" src="assets/imgs/gems/greenGem.png" alt="GREEN GEM">
+                    <img class="gem" id="pinkGem" src="assets/imgs/gems/pinkGem.png" alt="PINK GEM">
+                    <img class="gem" id="blueGem" src="assets/imgs/gems/blueGem.png" alt="BLUE GEM">
+                    <img class="gem" id="orangeGem" src="assets/imgs/gems/orangeGem.png" alt="ORANGE GEM">
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-sm-5" style="background-color:#a074b0;">
+            <h4>MATCH THIS NUMBER TO WIN:</h4>
+            <h1 id="random-number"></h1>
+        </div>
+
+        <div class="col-sm-5" style="background-color:#7e8edb">
+            <h4>YOUR GEM TOTAL:</h4>
+            <h1 id="playerScore"></h1>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <h5>Copyright &copy; Included as part of boilerplate </h5>
+        <a href='https://www.freepik.com/free-vector/pack-of-six-colored-gemstones_1093484.htm'> Gem Stones - Designed by Freepik</a>
+    </div>
+</footer>
+
+
+
+<!-- jquery + bootstrap jquery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+<!--game code -->
+<script src="assets/javascript/gemGame.js"></script>
+
+<!-- Scripts from Bootstrap: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+    

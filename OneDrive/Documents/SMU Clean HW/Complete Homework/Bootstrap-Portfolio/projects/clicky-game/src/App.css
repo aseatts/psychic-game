@@ -1,0 +1,27 @@
+.App {
+    text-align: center;
+}
+
+.App-header {
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    background-color: rgba(111, 52, 207, 0.411);
+}
+
+.App-title {
+    /* font-size: 30pt; */
+    color: white;
+    background-color: rgba(111, 52, 207, 0.411);
+}
+
+.message {
+    font-size: 10pt;
+    color: white;
+    background-color: rgba(111, 52, 207, 0.411);
+}
+
+.jumbotron {
+    height: 250px;
+    background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/131014113502-benin-voodoo-festival-2-horizontal-large-gallery.jpg");
+}

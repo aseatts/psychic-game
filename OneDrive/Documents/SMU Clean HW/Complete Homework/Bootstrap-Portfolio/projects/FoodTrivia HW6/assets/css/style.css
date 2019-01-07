@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  background: url("../images/gettyimages-1070846708-1024x1024.jpg") no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  text-align: center;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+}
+
+#wrapper {
+  width: 960px;
+  height: 95%;
+  box-sizing: border-box;
+  margin: 2.5% auto;
+  background-color: hsla(214, 96%, 20%, 0.247);
+}
+
+#sub-wrapper {
+  position: relative;
+  top: 15%;
+}
+
+button {
+  display: block;
+  width: 50%;
+  height: 20%;
+  margin: 0 auto;
+  font-size: 42px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-text-stroke-color: white;
+}
+
+img {
+  height: 200px;
+}
+
+h1 {
+  padding-top: 2.5%;
+  font-family: "Nixie One", cursive;
+  font-size: 6.5em;
+  font-weight: bold;
+  border: 2px solid rgb(53, 53, 53);
+  -webkit-text-stroke-color: white;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: "Nixie One", cursive;
+  margin-bottom: 10px;
+  font-size: 25px;
+  -webkit-text-stroke-color: white;
+}
+
+#start {
+  margin-top: 10%;
+  background: rgba(8, 231, 57, 0.644);
+  border: 2px solid rgb(53, 53, 53);
+  -webkit-text-stroke-color: white;
+}
+
+button:hover {
+  background: rgba(163, 42, 42, 0.548);
+  border: 2px solid white;
+  -webkit-text-stroke-color: white;
+}
