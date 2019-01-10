@@ -1,0 +1,43 @@
+<h3>What kinda hamburgers?</h3>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col s6">
+        {{#each burgers}}
+        {{#unless this.consumed}}
+        <div>
+          <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+            {{!-- <a class="waves-effect waves-light btn burgerAvailable orange"><i class="material-icons left">fastfood</i>{{this.burger_name}}</a>
+            --}}
+            <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button> </form>
+        </div> {{/unless}}
+        {{/each}} </div>
+
+      <div class="col s6">
+        {{#each burgers}}
+        {{#if this.consumed}}
+        <div class='burgerEaten'>
+          <div>
+            {{this.burger_name}}
+          </div>
+        </div>
+        {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
+<div>
+  <div class="divBuildKahuna">
+    <h2>Build a Kahuna</h2>
+
+    <div class="row">
+      <div class="col s12">
+        <form action="/burgers" method="POST">
+          <input type="text" id="name" name="burger_name" placeholder="What kinda hamburgers?">
+          <button type="submit" class="addBurgerButton">Add The Burger</button>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
